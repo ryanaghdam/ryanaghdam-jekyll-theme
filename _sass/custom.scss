@@ -1,0 +1,27 @@
+body {
+  font-family: 'Cardo', Georgia, Palatino, Lucida Bright, Book Antiqua, serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Oswald', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body>header {
+  margin-bottom: 4rem;
+}
+
+a, header nav a:visited, a code {
+  color: #23593F;
+}
+
+a:visited, a:visited code {
+  color: #58223C;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+a, header nav a:hover  {
+  text-decoration: underline;
+}

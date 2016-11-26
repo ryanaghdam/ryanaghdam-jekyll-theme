@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<style type="text/css">
+main ul {
+  list-style-type: none;
+  display: table;
+  padding-left: 0;
+}
+
+main ul li {
+  display: table-row;
+}
+
+main ul li time, main ul li div {
+  display: table-cell;
+}
+
+main ul li time:after {
+  content: "\00BB";
+  padding: 0.5em;
+}
+
+main ul li time {
+  white-space: nowrap;
+  text-align: right;
+}
+
+main ul li div p:last-child {
+  margin-bottom: 3rem;
+}
+</style>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+        {{ post.date | date: "%-m/%-d/%Y" }}
+      </time>
+      <div>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
