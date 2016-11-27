@@ -2,7 +2,8 @@
 ---
 
 @import 'writ';
-@import 'lightbox';
-@import 'image';
+@import '/assets/lightbox2-master/dist/css/lightbox.min.css';
 @import 'override';
 @import 'custom';
+@import 'image';
+@import 'lightbox';
