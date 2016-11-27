@@ -18,7 +18,7 @@
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>ryan@ryanaghdam.com (Ryan Aghdam)</author>
       <guid>http://ryanaghdam.com{{ post.id }}</guid>
-      <description>{{ post.excerpt | xml_escape }}</description>
+      <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
 
