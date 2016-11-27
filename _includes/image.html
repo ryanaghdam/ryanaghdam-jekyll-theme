@@ -1,5 +1,5 @@
 <figure class="image">
-  <a href="/assets/images/{{ include.image }}" data-lightbox="lightbox">
+  <a href="/assets/images/{{ include.image }}" data-lightbox="lightbox" data-title="{{ include.caption }}">
     <img src="/assets/images/thumbnails/{{ include.image }}" {% if include.caption %} alt="{{ include.caption }}" {% endif %}>
   </a>
 

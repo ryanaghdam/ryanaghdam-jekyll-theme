@@ -1,6 +1,13 @@
 .lightbox {
   .lb-details {
-    display: none;
+    .lb-number {
+      display: none;
+    }
+
+    .lb-caption {
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
   }
 
   .lb-image {
