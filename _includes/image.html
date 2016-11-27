@@ -1,0 +1,13 @@
+<figure>
+  <a href="#{{ include.image | slugify }}">
+    <img src="/assets/images/thumbnails/{{ include.image }}" class="thumbnail"{% if include.caption %} alt="{{ include.caption }}"{% endif %}>
+  </a>
+
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
+
+<a href="#" class="lightbox" id="{{ include.image | slugify }}">
+  <img src="/assets/images/{{ include.image }}"{% if include.caption %} alt="{{ include.caption }}"{% endif %}>
+</a>
