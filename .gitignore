@@ -6,3 +6,4 @@ Gemfile.lock
 _posts
 index.md
 rss.xml
+.DS_Store
