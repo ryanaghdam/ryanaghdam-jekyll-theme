@@ -1,0 +1,27 @@
+main ul.posts {
+  list-style-type: none;
+  display: table;
+  padding-left: 0;
+
+  li {
+    display: table-row;
+
+    time, div {
+      display: table-cell;
+    }
+
+    time {
+      white-space: nowrap;
+      text-align: right;
+
+      &:after {
+        content: "\00BB";
+        padding: 0.5em;
+      }
+    }
+
+    div p:last-child {
+      margin-bottom: 3rem;
+    }
+  }
+}
